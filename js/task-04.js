@@ -1,4 +1,3 @@
-"use strict";
 let counterValue = 0;
 
 const counterValueEL = document.querySelector("#value");

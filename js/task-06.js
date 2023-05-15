@@ -1,5 +1,3 @@
-"use strict";
-
 const textInput = document.querySelector("#validation-input");
 textInput.style.border = "3px solid #bdbdbd";
 

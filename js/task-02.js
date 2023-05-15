@@ -1,5 +1,3 @@
-"use strict";
-
 const ingredients = [
   "Potatoes",
   "Mushrooms",

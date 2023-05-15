@@ -1,14 +1,11 @@
-"use strict";
+const categoriesList = document.querySelector("#categories");
+const categoriesItems = categoriesList.children;
 
-const categoriesList = document.querySelectorAll("#categories");
-const categories = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categoriesItems.length}\n \n`);
 
-console.log(`Number of categories: ${categories.length}\n \n`);
-
-categories.forEach((category) => {
-  const categoryName = category.querySelector("h2").textContent;
-  const categoryElements = category.querySelectorAll("li").length;
-  console.log(
-    `categoryName: ${categoryName}\nElements: ${categoryElements}\n \n`
-  );
-});
+for (const item of categoriesItems) {
+  const categoryName = item.firstElementChild.textContent;
+  const categoryElements = item.lastElementChild.children.length;
+  console.log(`Category: ${categoryName}`);
+  console.log(`Elements: ${categoryElements}\n \n`);
+}
